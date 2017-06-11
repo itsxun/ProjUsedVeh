@@ -40,11 +40,11 @@
 
     <!--图片预上传-->
     <seller_remote_notify_url>
-        http://wx.szjjzd.gov.cn:9040/PoliceInServer/select.jsp?&amp;db=SZDJ&amp;q={"who":"SZLP","api":"sellerPicUploadPre","ver":"1","XSZBH":"{XSZBH}","TYPE":"{TYPE}","URL_WAN":"{URL_WAN}"}
+        http://wx.szjjzd.gov.cn:9040/PoliceInServer/select.jsp?&amp;db=SZDJ&amp;q={"who":"SZLP","api":"sellerPicUploadPre","ver":"1","XSZBH":"{XSZBH}","TYPE":"{TYPE}","URL_WAN":"{URL_WAN}","DISK_PATH":"{DISK_PATH}"}
     </seller_remote_notify_url>
 
     <buyer_remote_notify_url>
-        http://wx.szjjzd.gov.cn:9040/PoliceInServer/select.jsp?&amp;db=SZDJ&amp;q={"who":"SZLP","api":"buyerPicUploadPre","ver":"1","JYLSH":"{JYLSH}","TYPE":"{TYPE}","URL_WAN":"{URL_WAN}"}
+        http://wx.szjjzd.gov.cn:9040/PoliceInServer/select.jsp?&amp;db=SZDJ&amp;q={"who":"SZLP","api":"buyerPicUploadPre","ver":"1","JYLSH":"{JYLSH}","TYPE":"{TYPE}","URL_WAN":"{URL_WAN}","DISK_PATH":"{DISK_PATH}"}
     </buyer_remote_notify_url>
 
     <!--===========================================文件部分====================================================-->
@@ -59,4 +59,17 @@
     <file_url_pre>
         http://127.0.0.1:8081
     </file_url_pre>
+
+    <!--==================================ftp配置==================================-->
+    <ftp_default_pool_size>
+        10
+    </ftp_default_pool_size>
+
+    <ftp_upload_path>
+        /weixin_net_out
+    </ftp_upload_path>
+
+    <ftp_filename_pattern>
+        usedveh_{FILENAME}
+    </ftp_filename_pattern>
 </configuration>

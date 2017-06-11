@@ -8,8 +8,11 @@ import xin.fallen.ProjUsedVeh.config.StaticConfig;
 import xin.fallen.ProjUsedVeh.util.ConfigLoader;
 import xin.fallen.ProjUsedVeh.util.FileFinder;
 
+import java.io.File;
+
+
 public class SpringReadyLis implements ApplicationListener<ApplicationPreparedEvent> {
-    private static Logger log = LoggerFactory.getLogger("logger");
+    private static Logger log = LoggerFactory.getLogger("log");
 
     @Override
     public void onApplicationEvent(ApplicationPreparedEvent event) {

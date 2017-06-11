@@ -29,4 +29,11 @@ public class StaticConfig {
     public static String FilePathReplacement;
     @Alias("file_url_pre")
     public static String FileUrlPre;
+    //    ftp配置
+    @Alias("ftp_default_pool_size")
+    public static int DefaultPoolSize;
+    @Alias("ftp_upload_path")
+    public static String FtpUploadPath;
+    @Alias("ftp_filename_pattern")
+    public static String FtpFilenamePattern;
 }

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
 	<!-- 属性配置 -->
-	<property name="myname" value="WYC_YY_QUEUE"/>
+	<property name="myname" value="ProjUsedVeh"/>
 	<!-- Slf4j支持对象拼装方式:log.info("输出:V1={},V2={}","A","B"),输出:V1=A,V2=B -->
 	<appender name="RootFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
 		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
 			<level>info</level>
 		</filter>
-		<!-- ${catalina.base:-d:/mylogs} 格式是 ${变量名:-默认值},如果catalina.base是空，则使用缺省值d:/logs -->
-		<file>${catalina.base:-d:/logs}/webapps/${myname}/logback.log</file>
+		<!-- ${catalina.base:-/logs} 格式是 ${变量名:-默认值},如果catalina.base是空，则使用缺省值d:/logs -->
+		<file>${catalina.base:-/logs}/webapps/${myname}/logback.log</file>
 		<append>true</append>                                   
 		<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
 			<fileNamePattern>${catalina.base:-d:/mylogs}/webapps/${myname}/logback.log.%i.zip</fileNamePattern>
